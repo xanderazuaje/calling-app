@@ -13,4 +13,17 @@ export default defineConfig({
       // implement node event listeners here
     },
   },
+  env: {
+    browserPermissions: {
+      notifications: "allow",
+      geolocation: "allow",
+      camera: "block",
+      microphone: "block",
+      images: "allow",
+      javascript: "allow",
+      popups: "ask",
+      plugins: "ask",
+      cookies: "allow"
+    }
+  }
 });
