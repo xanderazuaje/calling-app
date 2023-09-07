@@ -15,6 +15,6 @@ describe('<Webcam />', () => {
   })
   it('renders video with muted', ()=>{
     cy.mount(<Webcam />)
-    cy.get('video').should('have.attr', 'muted')
+    cy.get('video').should('have.prop', 'muted')
   })
 })

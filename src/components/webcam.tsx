@@ -12,6 +12,7 @@ export default function Webcam() {
         mediaDevices.getUserMedia(constraints)
         .then((stream) => {
             video!.srcObject = stream;
+            video!.muted = true;
         });
     }, []);
 
