@@ -17,7 +17,7 @@ export default function Webcam() {
 
     return (
         <div>
-            <video ref={videoRef} className="w-full h-full" autoPlay></video>
+            <video ref={videoRef} className="w-full h-full" autoPlay muted></video>
         </div>
     )
 }

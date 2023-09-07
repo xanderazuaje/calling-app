@@ -9,4 +9,12 @@ describe('<Webcam />', () => {
     cy.mount(<Webcam />)
     cy.get('video').should('exist')
   })
+  it('renders video with autoPlay', ()=>{
+    cy.mount(<Webcam />)
+    cy.get('video').should('have.attr', 'autoPlay')
+  })
+  it('renders video with muted', ()=>{
+    cy.mount(<Webcam />)
+    cy.get('video').should('have.attr', 'muted')
+  })
 })
